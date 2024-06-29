@@ -27,7 +27,7 @@ jobs:
 
     - name: Clone pythonmodules repository
       run: |
-        git clone --depth=1 https://${{ secrets.CUSTOM_TOKEN }}@github.com/0xlino/pythonmodules pythonmodules
+        git clone --depth=1 https://${{ secrets.CUSTOM_TOKEN }}@github.com/jtig37/pythonmodules pythonmodules
         cd pythonmodules
         python setup.py install
 
@@ -38,8 +38,8 @@ jobs:
     - name: push to origin master
       run: |
         echo start push
-        git config --global user.name "0xlino"
-        git config --global user.email "hello@benline.co.uk"
+        git config --global user.name "jtig37"
+        git config --global user.email "urldao@protonmail.com"
         
         git add -A
         git commit -m $(date '+%Y-%m-%d')
